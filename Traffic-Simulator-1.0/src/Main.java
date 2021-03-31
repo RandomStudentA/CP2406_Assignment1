@@ -19,7 +19,9 @@ public class Main {
             System.out.println("Please input parameters for road_" + i + "...");
             System.out.print("Length:");
             int lengthInput = simController.nextInt();
-            int speedLimitInput = 1;
+            System.out.print("Please enter the Speed limit:");
+            int speedLimitInput = simController.nextInt();
+            //int speedLimitInput = 1;
             roads.add(new Road(Integer.toString(i), speedLimitInput, lengthInput, new int[]{0, 0}));
         }
         System.out.println("\nRoads;");
